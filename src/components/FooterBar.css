@@ -1,0 +1,57 @@
+.footer-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100vw;
+  background: #2196f3;
+  color: #fff;
+  box-shadow: 0 -2px 12px #001c3544;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bar-content {
+  max-width: 430px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+
+.footer-bar-cart {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.footer-bar-amount {
+  margin-left: 2px;
+  font-weight: 700;
+}
+
+.footer-bar-btn {
+  background: #fff;
+  color: #2196f3;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 1.02rem;
+  border: none;
+  padding: 9px 18px;
+  margin-left: 16px;
+  cursor: pointer;
+  box-shadow: 0 1px 8px #eeeeee;
+  transition: background 0.12s, color 0.12s;
+}
+
+.footer-bar-btn:hover {
+  background: #1976d2;
+  color: #fff;
+}

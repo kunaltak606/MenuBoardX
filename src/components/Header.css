@@ -1,0 +1,70 @@
+.fs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px 18px;
+  border-bottom: 1px solid #f0f1f2;
+}
+
+.fs-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fs-header-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.fs-header-brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.fs-header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.fs-header-menu-btn {
+  background: #f3f8ff;
+  border: none;
+  border-radius: 13px;
+  padding: 7px;
+  cursor: pointer;
+  box-shadow: 0 1px 6px #e9e9f9;
+}
+
+.fs-header-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f8ff;
+  border-radius: 15px;
+  padding: 2px 9px 2px 2px;
+}
+
+.fs-header-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.fs-header-hello {
+  font-size: 0.92rem;
+  color: #5c8496;
+  font-weight: 500;
+}
+
+.fs-header-name {
+  font-size: 1.04rem;
+  color: #2070c9;
+  font-weight: 600;
+  margin-top: -2px;
+}

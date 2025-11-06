@@ -1,0 +1,36 @@
+.modal-bg {
+  position: fixed; inset: 0;
+  background: rgba(44,62,80,0.22);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 10001;
+}
+.item-modal {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px #8882;
+  max-width: 365px;
+  width: 97vw;
+  padding: 20px;
+}
+.modal-close {
+  position: absolute; top: 11px; right: 18px;
+  background: none; border: none; font-size: 2rem; color: #1976d2; cursor: pointer;
+}
+.modal-header {
+  display: flex; align-items: flex-start; gap: 14px;
+}
+.modal-header img {
+  width: 62px; height: 62px; border-radius: 10px; object-fit: cover;
+}
+.modal-title { font-weight: 700; font-size: 1.04rem; }
+.modal-desc { color: #555; font-size: 0.97rem; margin-top: 3px; }
+.modal-price { color: #2196f3; font-weight: 700; font-size: 1rem; margin-top: 6px; }
+.modal-row { margin: 12px 0; display: flex; gap: 11px; align-items: center; }
+.modal-add-btn {
+  width: 100%; background: #1976d2; color: #fff; border-radius: 26px;
+  padding: 14px 0; font-weight: 700; font-size: 1.07rem; border: none; margin-top: 15px; cursor: pointer;
+}
+textarea {
+  width: 100%; border-radius: 6px; border: 1px solid #eee; font-size: 0.98rem;
+  padding: 8px 11px; background: #fafcff;
+}

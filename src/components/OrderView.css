@@ -1,0 +1,89 @@
+.orderview-bg {
+  position: fixed; inset: 0;
+  background: rgba(44,62,80,0.22);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 10002;
+}
+.orderview-modal {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 34px #b3cfff30;
+  max-width: 385px;
+  width: 97vw;
+  max-height: 95vh;
+  overflow: auto;
+  padding: 24px 18px 18px 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.orderview-close {
+  position: absolute; top: 11px; right: 17px;
+  background: none; border: none; font-size: 2rem; color: #2296f3; cursor: pointer;
+}
+.orderview-list {
+  margin-bottom: 14px;
+  margin-top: 12px;
+}
+.orderview-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+.orderview-img {
+  width: 50px; height: 50px; border-radius: 11px; object-fit: cover;
+}
+.orderview-name {
+  font-weight: 600;
+  color: #144;
+  font-size: 1.08rem;
+  margin-bottom: 3px;
+}
+.orderview-name span {
+  color: #20a0e6; font-size: 0.97rem; font-weight: 500;
+}
+.orderview-options {
+  color: #4e7e99;
+  font-size: 0.97rem;
+  margin-bottom: 2px;
+}
+.orderview-instr {
+  font-size: 0.97rem; color: #aa2d2d;
+  margin-bottom: 2px;
+}
+.orderview-price {
+  margin-left: auto;
+  font-weight: 600;
+  color: #2196f3;
+  font-size: 1.08rem;
+}
+.orderview-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border-top: 2px solid #e9effa;
+  padding-top: 12px;
+  margin-top: 9px;
+}
+.orderview-confirm-btn {
+  width: 100%; margin-top: 15px;
+  background: #2196f3;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 13px 0;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.orderview-empty {
+  color: #999;
+  font-size: 1.08rem;
+  text-align: center;
+  padding: 40px 0;
+}
