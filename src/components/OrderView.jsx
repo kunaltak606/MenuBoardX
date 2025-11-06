@@ -36,13 +36,13 @@ function OrderView({ cart, onClose, onClear, onEdit, onRemove }) {
                       </div>
                     )}
                   </div>
-                  <span className="orderview-price">${item.totalPrice.toFixed(2)}</span>
+                  <span className="orderview-price">₹{item.totalPrice.toFixed(2)}</span>
                 </div>
               ))}
             </div>
             <div className="orderview-total">
               <span>Total</span>
-              <span>${total.toFixed(2)}</span>
+              <span>₹{total.toFixed(2)}</span>
             </div>
           </>
         )}

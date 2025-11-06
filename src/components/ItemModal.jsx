@@ -68,7 +68,7 @@ function ItemModal({ item, onClose, onAdd }) {
           />
         </div>
         <button className="modal-add-btn" onClick={handleAdd}>
-          Add to Cart – ${totalPrice.toFixed(2)}
+          Add to Cart – ₹{totalPrice.toFixed(2)}
         </button>
       </div>
     </div>
