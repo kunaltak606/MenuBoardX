@@ -3,45 +3,57 @@ import "./MenuMain.css";
 
 // Example categories
 const CATEGORIES = [
-  { id: "all", name: "All", img: "https://img.icons8.com/color/48/000000/ingredients-box.png" },
-  { id: "appetizers", name: "Appetizers", img: "https://img.icons8.com/color/48/000000/salad.png" },
-  { id: "burgers", name: "Flame Grill Burgers", img: "https://img.icons8.com/color/48/000000/hamburger.png" },
-  { id: "veggie", name: "Veggie & Plant Based Burgers", img: "https://img.icons8.com/color/48/000000/vegan-food.png" },
-  // Add more categories as needed
+  { id: "all", name: "All", img: "https://img.icons8.com/color/48/ingredients.png" },
+  { id: "special_ice_cream", name: "Special Ice Cream", img: "https://img.icons8.com/color/48/ice-cream-bowl.png" },
+  { id: "guilt_free_ice_cream", name: "Guilt Free", img: "https://img.icons8.com/color/48/leaf.png" },
+  { id: "fruit_ice_cream", name: "Fruit Ice Cream", img: "https://img.icons8.com/color/48/strawberry.png" },
+  { id: "choco_nut_cone", name: "Choco Nut Cone", img: "https://img.icons8.com/color/48/waffle-ice-cream.png" },
+  { id: "italian_gelato", name: "Italian Gelato", img: "https://img.icons8.com/color/48/frozen-yogurt.png" },
+  { id: "sundae", name: "Sundaes", img: "https://img.icons8.com/color/48/ice-cream-sundae.png" },
+  { id: "sorbet", name: "Sorbet Vegan", img: "https://img.icons8.com/color/48/popsicle.png" },
+  { id: "stone_sundae", name: "Stone Sundae", img: "https://img.icons8.com/color/48/ice-cream-bowl.png" },
+  { id: "ice_cream_cake", name: "Ice Cream Cake", img: "https://img.icons8.com/color/48/birthday-cake.png" },
+  { id: "ice_cream_shake", name: "Ice Cream Shake", img: "https://img.icons8.com/color/48/milkshake.png" },
+  { id: "fruit_shake", name: "Fruit Shake", img: "https://img.icons8.com/color/48/banana-smoothie.png" },
+  { id: "ice_cream_soda", name: "Ice Cream Soda", img: "https://img.icons8.com/color/48/soda.png" },
+  { id: "add_ons", name: "Add Ons", img: "https://img.icons8.com/color/48/add.png" },
+  { id: "kulfi", name: "Kulfi", img: "https://img.icons8.com/color/48/popsicle.png" },
+  { id: "faluda", name: "Faluda", img: "https://img.icons8.com/color/48/smoothie.png" },
+  { id: "cassata", name: "Cassata", img: "https://img.icons8.com/color/48/cake.png" }
 ];
+
+
 
 // Example items
 const MENU_ITEMS = [
-  {
-    id: 1,
-    name: "Chicken Dumplings",
-    category: "appetizers",
-    price: "2.50ETB",
-    img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80",
-  },
-  {
-    id: 2,
-    name: "Egg Roll",
-    category: "appetizers",
-    price: "1.50ETB",
-    img: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=300&q=80"
-  },
-  {
-    id: 3,
-    name: "Fried Cheese Wonton",
-    category: "appetizers",
-    price: "2.00ETB",
-    img: "https://images.unsplash.com/photo-1464306076886-debede14baa9?auto=format&fit=crop&w=400&q=80"
-  },
-  {
-    id: 4,
-    name: "Vegetable Dumplings",
-    category: "veggie",
-    price: "2.50ETB",
-    img: "https://images.unsplash.com/photo-1459802071246-2010b6e16c2a?auto=format&fit=crop&w=400&q=80"
-  },
-  // Add more items as needed
+  { id: 1, category: "special_ice_cream", name: "Vanilla", price: "68", img: "https://images.unsplash.com/photo-1439396087961-98bc12c21176?auto=format&fit=crop&w=400&q=80" },
+  { id: 2, category: "special_ice_cream", name: "Strawberry", price: "68", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" },
+  { id: 3, category: "special_ice_cream", name: "Cotton Candy", price: "76", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" },
+  { id: 4, category: "special_ice_cream", name: "Tutty Fruity", price: "76", img: "https://images.unsplash.com/photo-1519864600265-abb2529227a1?auto=format&fit=crop&w=400&q=80" },
+  { id: 5, category: "special_ice_cream", name: "Bubble Gum", price: "76", img: "https://images.unsplash.com/photo-1458938354258-3e66eb36eb7b?auto=format&fit=crop&w=400&q=80" },
+  { id: 6, category: "special_ice_cream", name: "Rose Special", price: "85", img: "https://images.unsplash.com/photo-1464306076886-debede14baa9?auto=format&fit=crop&w=400&q=80" },
+  { id: 7, category: "special_ice_cream", name: "Brownie Walnut", price: "89", img: "https://images.unsplash.com/photo-1516749711405-6e41babd77b5?auto=format&fit=crop&w=400&q=80" },
+  { id: 8, category: "special_ice_cream", name: "California Mania", price: "89", img: "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=400&q=80" },
+  { id: 9, category: "special_ice_cream", name: "Butterscotch", price: "89", img: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80" },
+  { id: 10, category: "special_ice_cream", name: "Coffee Walnut", price: "89", img: "https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?auto=format&fit=crop&w=400&q=80" },
+  { id: 11, category: "special_ice_cream", name: "Black Currant", price: "89", img: "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=400&q=80" },
+  { id: 12, category: "special_ice_cream", name: "Kesar Kulfi", price: "89", img: "https://images.unsplash.com/photo-1465101178521-c1a9136a2737?auto=format&fit=crop&w=400&q=80" },
+  { id: 13, category: "special_ice_cream", name: "Chunky Munky", price: "89", img: "https://images.unsplash.com/photo-1532635111-bc4e6f23af89?auto=format&fit=crop&w=400&q=80" },
+  { id: 14, category: "special_ice_cream", name: "Chocolate Chips", price: "89", img: "https://images.unsplash.com/photo-1502741126161-b048400d98b2?auto=format&fit=crop&w=400&q=80" },
+  { id: 15, category: "special_ice_cream", name: "Almond Chocolate Fudge", price: "89", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" },
+  { id: 16, category: "special_ice_cream", name: "Giani Special", price: "89", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
+  { id: 17, category: "special_ice_cream", name: "Red Velvet", price: "102", img: "https://images.unsplash.com/photo-1464306076886-debede14baa9?auto=format&fit=crop&w=400&q=80" },
+  { id: 18, category: "special_ice_cream", name: "American Nut", price: "102", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" },
+  { id: 19, category: "special_ice_cream", name: "Punjabi Delight", price: "89", img: "https://images.unsplash.com/photo-1465101178521-c1a9136a2737?auto=format&fit=crop&w=400&q=80" },
+  { id: 20, category: "special_ice_cream", name: "Black Forest", price: "102", img: "https://images.unsplash.com/photo-1439396087961-98bc12c21176?auto=format&fit=crop&w=400&q=80" },
+  { id: 21, category: "special_ice_cream", name: "Belgian Chocolate", price: "102", img: "https://images.unsplash.com/photo-1464454709131-ffd692591ee5?auto=format&fit=crop&w=400&q=80" },
+  { id: 22, category: "special_ice_cream", name: "Cream N Cookies", price: "102", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" },
+  { id: 23, category: "special_ice_cream", name: "Mocha Brownie", price: "102", img: "https://images.unsplash.com/photo-1516749711405-6e41babd77b5?auto=format&fit=crop&w=400&q=80" },
+  { id: 24, category: "special_ice_cream", name: "Premium Kulfi", price: "102", img: "https://images.unsplash.com/photo-1465101178521-c1a9136a2737?auto=format&fit=crop&w=400&q=80" },
+  { id: 25, category: "special_ice_cream", name: "Thandai", price: "102", img: "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=400&q=80" },
+  { id: 26, category: "special_ice_cream", name: "Elaichi Toffee", price: "102", img: "https://images.unsplash.com/photo-1439396087961-98bc12c21176?auto=format&fit=crop&w=400&q=80" }
 ];
+
 
 const MenuMain = ({ onAddClick }) => {
 
