@@ -1,17 +1,15 @@
 import React from "react";
 import "./OrderView.css";
 
-function OrderView({ cart, onClose, onClear, onEdit }) {
+function OrderView({ cart, onClose, onClear, onEdit, onRemove }) {
   const total = cart.reduce((sum, item) => sum + item.totalPrice, 0);
 
   return (
     <div className="orderview-bg">
       <div className="orderview-modal">
-        <button className="orderview-close" onClick={onClose} aria-label="Close Cart">×</button>
+        <button className="orderview-close" onClick={onClose}>×</button>
         <h2>Your Cart</h2>
-        <button className="orderview-clearbtn" onClick={onClear}>
-          Clear Cart
-        </button>
+        <button className="orderview-clearbtn" onClick={onClear}>Clear Cart</button>
         {cart.length === 0 ? (
           <div className="orderview-empty">Your cart is empty.</div>
         ) : (
@@ -23,13 +21,8 @@ function OrderView({ cart, onClose, onClear, onEdit }) {
                   <div>
                     <div className="orderview-name">
                       {item.name} <span>x{item.qty}</span>
-                      <button
-                        className="orderview-editbtn"
-                        onClick={() => onEdit(idx)}
-                        aria-label={`Edit ${item.name}`}
-                      >
-                        Edit
-                      </button>
+                      <button className="orderview-editbtn" onClick={() => onEdit(idx)}>Edit</button>
+                      <button className="orderview-removebtn" onClick={() => onRemove(idx)}>Remove</button>
                     </div>
                     {item.extras && item.extras.length > 0 && (
                       <div className="orderview-options">+ {item.extras.join(", ")}</div>
@@ -57,5 +50,6 @@ function OrderView({ cart, onClose, onClear, onEdit }) {
     </div>
   );
 }
+
 
 export default OrderView;

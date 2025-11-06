@@ -138,3 +138,20 @@
   text-align: center;
   padding: 40px 0;
 }
+
+.orderview-removebtn {
+  margin-left: 8px;
+  font-size: 0.82rem;
+  color: #e94b3c;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0 6px;
+  transition: color 0.2s;
+}
+
+.orderview-removebtn:hover {
+  color: #b8392a;
+}
+

@@ -14,6 +14,12 @@ function App() {
 
   // Called when "Add" is clicked on MenuMain
   const handleAddClick = (itemData) => setModalItem(itemData);
+  
+  const handleRemoveCart = (idx) => {
+  const updated = cart.filter((_, i) => i !== idx);
+  setCart(updated);
+  };
+
 
   // Called when user adds item from modal
   const handleAddToCart = (itemWithOptions) => {
@@ -51,6 +57,7 @@ function App() {
           onClose={() => setShowOrder(false)}
           onClear={() => setCart([])}
           onEdit={handleEditCart}
+          onRemove={handleRemoveCart}
         />
       )}
 
